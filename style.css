@@ -1,13 +1,65 @@
+
+
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
 }
-  
+
+html .style1 {
+  background-color: hsl(222, 26%, 31%);
+}
+
+html .style2 {
+  background-color: aqua;
+}
+
+html .style3 {
+  background-color: blueviolet;
+}
+
+* .style1, * .style2, * .style3 {
+  transition: all 2s ease-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  width: 375px;
+  height: 667px;
+  margin: auto;
+  padding: 24px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+  /* Customize Radio Buttons https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+ 
+  /* My Styling */
+
 .style-selector { 
-    display: flex;
-    margin: 10px;
+  display: flex;
+  margin: 10px;
 } 
+
+.style-selector h2 {
+  font-size: 0.75rem;
+  margin: 0;
+  align-self: center;
+  color: hsl(0, 0%, 100%);
+  padding: 0px 17px 7px 0px;
+}
 
 .button-container {
     width: 20px;
@@ -24,11 +76,10 @@
       height: 20px;
       width: 60px;
       margin: 15px 0px 0px -54px;
-      /* float: left; */
       border-radius: 10px;
   }
 
-  /* Customize Radio Buttons https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+  /* W3 Styling */
 
    /* Customize the label (the container) */
 .container {
@@ -37,7 +88,8 @@
     padding-left: 12px;
     margin-bottom: 0px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 100%);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -99,17 +151,45 @@
     background-color: blueviolet;
   }
 
-  .style1 .calculator-grid {
-    background-color: hsl(6, 63%, 50%);
-    transition: all 2s ease-out;
+  /* Calculator Grid Styling */
+
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: minmax(60px, auto) repeat(4, 60px);
+    gap: 17px 13px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 24px;
+    border-radius: 10px;
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    outline: none;
+    border: 0;
+    padding: 0;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
   }
 
-  .style2 .calculator-grid {
-    background-color: aqua;
-    transition: all 2s ease-out;
+  .span-two {
+    grid-column: span 2;
   }
 
-  .style3 .calculator-grid {
-    background-color: blueviolet;
-    transition: all 2s ease-out;
-  }
+/* Attribution footer */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 50px;
+}
+    
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
