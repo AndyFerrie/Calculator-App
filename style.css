@@ -88,5 +88,28 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: hsl(6, 63%, 50%);
+    background-color: hsl(6, 63%, 50%);
   } 
+
+  .style2 .container .checkmark:after {
+    background-color: aqua; 
+  }
+
+  .style3 .container .checkmark:after {
+    background-color: blueviolet;
+  }
+
+  .style1 .calculator-grid {
+    background-color: hsl(6, 63%, 50%);
+    transition: all 2s ease-out;
+  }
+
+  .style2 .calculator-grid {
+    background-color: aqua;
+    transition: all 2s ease-out;
+  }
+
+  .style3 .calculator-grid {
+    background-color: blueviolet;
+    transition: all 2s ease-out;
+  }

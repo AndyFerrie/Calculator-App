@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./style1.css" id="stylelink">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="style1">
+<body id="stylelink" class="style1">
 
   <div class="calculator-grid">
 
@@ -30,7 +29,7 @@
       <div class="button-container">
         <label class="container" for="style1">
           <p>1</p>
-          <input type="radio" id="style1" name="style">
+          <input type="radio" id="style1" name="style" checked="checked">
           <span class="checkmark"></span>
         </label>
       </div>
@@ -88,19 +87,5 @@
     Coded by <a href="#">Andrew Ferrie</a>.
   </div>
 </body>
-
-<script>
-
-let styles = document.getElementsByName('style');
-let styleLink = document.getElementById('stylelink');
-
-styles.forEach((style) => {
-    style.addEventListener('change', () => {
-        styleLink.href = './'+style.id.toString()+'.css';
-        console.log(style.id);
-    })
-})
-
-</script>
 
 </html>
