@@ -1,5 +1,5 @@
 * .style1, * .style2, * .style3 {
-  transition: all 3s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 .style1 *, .style2 *, .style3 * {
@@ -168,8 +168,6 @@ background-color: hsl(268, 71%, 12%);
     font-weight: 700;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -324,6 +322,11 @@ body {
     height: 60px;
     border-radius: 5px;
   }
+
+  .calculator-grid button.color2 {
+    font-size: 1rem;
+  }
+
 
   .span-two {
     grid-column: span 2;
