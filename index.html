@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style1.css" id="stylelink">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
@@ -14,8 +19,68 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="style1">
 
+  <div class="calculator-grid">
+
+    <h1>calc</h1>
+
+    <div class="style-selector">
+
+      <div class="button-container">
+        <label class="container" for="style1">
+          <p>1</p>
+          <input type="radio" id="style1" name="style">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="button-container">
+        <label class="container" for="style2">
+          <p>2</p>
+          <input type="radio" id="style2" name="style">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="button-container">
+        <label class="container" for="style3">
+          <p>3</p>
+          <input type="radio" id="style3" name="style">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class=button-background>
+      </div>
+
+    </div>
+
+    <div class="output">
+      <div class="previous-operand"></div>
+      <div class="current-operand"></div>
+    </div>
+
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>DEL</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>-</button>
+    <button>.</button>
+    <button>0</button>
+    <button>/</button>
+    <button>X</button>
+    <button class="span-two">RESET</button>
+    <button class="span-two">=</button>
+
+  </div>
 
   
   <div class="attribution">
@@ -23,4 +88,19 @@
     Coded by <a href="#">Andrew Ferrie</a>.
   </div>
 </body>
+
+<script>
+
+let styles = document.getElementsByName('style');
+let styleLink = document.getElementById('stylelink');
+
+styles.forEach((style) => {
+    style.addEventListener('change', () => {
+        styleLink.href = './'+style.id.toString()+'.css';
+        console.log(style.id);
+    })
+})
+
+</script>
+
 </html>

@@ -1,0 +1,15 @@
+.button-background {
+    background-color: green;
+}
+
+.checkmark {
+    background-color: pink;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: orange;
+}
+
+.container .checkmark:after {
+    background: yellow;
+} 

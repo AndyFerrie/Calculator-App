@@ -1,0 +1,15 @@
+.button-background {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.checkmark {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.container input:checked ~ .checkmark {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.container .checkmark:after {
+    background: hsl(6, 63%, 50%);
+} 
