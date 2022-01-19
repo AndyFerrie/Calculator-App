@@ -1,3 +1,160 @@
+* .style1 *, * .style2 *, * .style3 * {
+  transition: all 1s ease-out;
+}
+
+
+/* Main Background Colour */
+
+html .style1 {
+  background-color: hsl(222, 26%, 31%);
+}
+
+html .style2 {
+  background-color: hsl(0, 0%, 90%)
+}
+
+html .style3 {
+  background-color: hsl(268, 75%, 9%)
+}
+
+/* Toggle Background & Keypad Background */
+
+.style1 .button-background, .style1 .checkmark, .style1 .container input:checked ~ .checkmark, .style1 .calculator-grid {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.style2 .button-background, .style2 .checkmark, .style2 .container input:checked ~ .checkmark, .style2 .calculator-grid {
+  background-color: hsl(0, 5%, 81%)
+}
+
+.style3 .button-background, .style3 .checkmark, .style3 .container input:checked ~ .checkmark, .style3 .calculator-grid {
+background-color: hsl(268, 71%, 12%);
+}
+
+/* Screen Background */
+
+.style1 .output {
+  background-color: hsl(224, 36%, 15%);
+}
+
+.style2 .output {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.style3 .output {
+  background-color: hsl(268, 71%, 12%)
+}
+
+/* Key Background */
+
+.style1 .calculator-grid button {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
+}
+
+.style1 .calculator-grid button.color2 {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+}
+
+.style1 .calculator-grid button.color3 {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+}
+
+.style2 .calculator-grid button {
+  background-color: hsl(45, 7%, 89%);
+  color: hsl(60, 10%, 19%);
+  box-shadow: 0px 4px 0px hsl(35, 11%, 61%);
+}
+
+.style2 .calculator-grid button.color2 {
+  background-color: hsl(185, 42%, 37%);
+  color: hsl(0, 0, 100%);
+  box-shadow: 0px 4px 0px hsl(185, 58%, 25%);
+}
+
+.style2 .calculator-grid button.color3 {
+  background-color: hsl(25, 98%, 40%);
+  color: hsl(0, 0, 100%);
+  box-shadow: 0px 4px 0px hsl(25, 99%, 27%)
+}
+
+.style3 .calculator-grid button {
+  background-color: hsl(268, 47%, 21%);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0px 4px 0px hsl(290, 70%, 36%);
+}
+
+.style3 .calculator-grid button.color2 {
+  background-color: hsl(281, 89%, 26%);
+  color: hsl(0, 0, 100%);
+  box-shadow: 0px 4px 0px hsl(285, 91%, 52%);
+}
+
+.style3 .calculator-grid button.color3 {
+  background-color: hsl(176, 100%, 44%);
+  color: hsl(198, 20%, 13%);
+  box-shadow: 0px 4px 0px hsl(177, 92%, 70%);
+}
+
+/* Toggle Button */
+
+.style1 .container .checkmark:after {
+  background-color: hsl(6, 63%, 50%);
+}
+
+.style2 .container .checkmark:after {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.style3 .container .checkmark:after {
+  background-color: hsl(176, 100%, 44%);
+}
+
+/* Text */
+
+.style1 h1, .style1 .output .current-operand, .style1 .style-selector h2, .style1 .container {
+  color: hsl(0, 0%, 100%);
+}
+
+.style1 .output .previous-operand {
+  color: hsl(0, 0%, 75%);
+}
+
+.style2 h1, .style2 .output .current-operand, .style2 .style-selector h2, .style2 .container {
+  color: hsl(60, 10%, 19%);
+}
+
+.style2 .output .previous-operand {
+  color: hsl(60, 10%, 40%);
+}
+
+.style3 h1, .style3 .output .current-operand, .style3 .style-selector h2, .style3 .container {
+  color: hsl(52, 100%, 62%);
+}
+
+.style3 .output .previous-operand {
+  color: hsl(52, 100%, 30%);
+}
+
+
+/* Button Press */
+
+.style1 .calculator-grid button:active, .style1 .calculator-grid button.color2:active, .style1 .calculator-grid button.color3:active {
+  box-shadow: inset 0px 0px 5px rgb(90, 90, 90);
+}
+
+.style2 .calculator-grid button:active, .style2 .calculator-grid button.color2:active, .style2 .calculator-grid button.color3:active {
+  box-shadow: inset 0px 0px 5px rgb(160, 160, 160);
+}
+
+.style3 .calculator-grid button:active, .style3 .calculator-grid button.color2:active, .style3 .calculator-grid button.color3:active {
+  box-shadow: inset 0px 0px 5px rgb(50, 50, 50);
+}
 
 
 
@@ -7,31 +164,18 @@
     font-weight: 700;
 }
 
-html .style1 {
-  background-color: hsl(222, 26%, 31%);
-}
 
-html .style2 {
-  background-color: aqua;
-}
-
-html .style3 {
-  background-color: blueviolet;
-}
-
-* .style1, * .style2, * .style3 {
-  transition: all 2s ease-out;
-}
 
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .main-content {
   width: 375px;
   height: 667px;
-  margin: auto;
   padding: 24px;
 }
 
@@ -40,8 +184,29 @@ body {
   justify-content: space-between;
 }
 
-h1 {
-  color: hsl(0, 0%, 100%);
+/* Calculator Screen */
+
+.output {
+  border-radius: 10px;
+  margin-bottom: 24px;
+  min-height: 88px;
+  line-height: 1.5;
+  text-align: end;
+  justify-content: center;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.output .previous-operand {
+  font-size: 20px;
+}
+
+.output .current-operand {
+  font-size: 28px;
 }
 
   /* Customize Radio Buttons https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
@@ -57,7 +222,6 @@ h1 {
   font-size: 0.75rem;
   margin: 0;
   align-self: center;
-  color: hsl(0, 0%, 100%);
   padding: 0px 17px 7px 0px;
 }
 
@@ -72,7 +236,6 @@ h1 {
   }
 
   .button-background {
-      background-color: hsl(223, 31%, 20%);
       height: 20px;
       width: 60px;
       margin: 15px 0px 0px -54px;
@@ -89,7 +252,6 @@ h1 {
     margin-bottom: 0px;
     cursor: pointer;
     font-size: 0.75rem;
-    color: hsl(0, 0%, 100%);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -112,13 +274,7 @@ h1 {
     left: 6px;
     height: 20px;
     width: 20px;
-    background-color: hsl(223, 31%, 20%);
     border-radius: 50%;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: hsl(223, 31%, 20%);
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -140,16 +296,7 @@ h1 {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: hsl(6, 63%, 50%);
   } 
-
-  .style2 .container .checkmark:after {
-    background-color: aqua; 
-  }
-
-  .style3 .container .checkmark:after {
-    background-color: blueviolet;
-  }
 
   /* Calculator Grid Styling */
 
@@ -160,36 +307,20 @@ h1 {
     grid-template-columns: repeat(4, 60px);
     grid-template-rows: minmax(60px, auto) repeat(4, 60px);
     gap: 17px 13px;
-    background-color: hsl(223, 31%, 20%);
     padding: 24px;
     border-radius: 10px;
   }
   
-  .calculator-grid > button {
+  .calculator-grid button {
     cursor: pointer;
     font-size: 1.5rem;
-    background-color: hsl(30, 25%, 89%);
-    color: hsl(221, 14%, 31%);
     outline: none;
     border: 0;
     padding: 0;
     height: 60px;
     border-radius: 5px;
-    box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
   }
 
   .span-two {
     grid-column: span 2;
   }
-
-/* Attribution footer */
-
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
-  margin-top: 50px;
-}
-    
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}

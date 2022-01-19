@@ -4,6 +4,5 @@ let styleLink = document.getElementById('stylelink');
 styles.forEach((style) => {
     style.addEventListener('change', () => {
         styleLink.className = style.id.toString();
-        console.log(style.id);
     })
 })
