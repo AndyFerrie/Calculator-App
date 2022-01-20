@@ -125,13 +125,6 @@ deleteButton.addEventListener('click', button => {
     calculator.updateDisplay()
 })
 
-
-
-
-
-
-
-
 // Toggles class in body to switch styles //
 
 let styles = document.getElementsByName('style');
