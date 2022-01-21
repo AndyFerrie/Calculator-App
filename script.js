@@ -125,6 +125,13 @@ deleteButton.addEventListener('click', button => {
     calculator.updateDisplay()
 })
 
+// Checks option 1 on refresh //
+
+window.onload=check;
+function check() {
+  document.getElementById("style1").checked = true;
+}
+
 // Toggles class in body to switch styles //
 
 let styles = document.getElementsByName('style');
