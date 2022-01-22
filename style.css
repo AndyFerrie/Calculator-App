@@ -1,9 +1,9 @@
 * .style1, * .style2, * .style3 {
-  transition: all 1.5s ease-out;
+  transition: all 0.5s ease;
 }
 
 .style1 *, .style2 *, .style3 * {
-  transition: all 1s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 
