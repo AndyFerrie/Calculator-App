@@ -1,4 +1,4 @@
-# Frontend Mentor Chalenge: Calculator App
+# Frontend Mentor Challenge: Calculator App
 
 This is my solution to the Calculator App challenge on Frontend Mentor. 
 
