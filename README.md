@@ -20,11 +20,14 @@ This is my solution to Calculator App challenge on Frontend Mentor.
 
 The challenge was to build out this calculator app and get it looking as close to the design as possible.
 
-(Challenge.jpg)
+![Challenge](Challenge.jpg)
 
 ### Screenshot
 
+Final Results
+
 ![Final Results](Screenshot1.png)
+
 (Screenshot2.png)
 (Screenshot3.png)
 
