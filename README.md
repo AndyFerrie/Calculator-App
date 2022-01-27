@@ -26,9 +26,7 @@ The challenge was to build the below calculator app and get it looking as close 
 
 Final Results:
 
-<img src="Screenshot1.png" width="100">
-<img src="Screenshot2.png" width="100">
-<img src="Screenshot3.png" width="100">
+<img src="Screenshot1.png" width="300"> <img src="Screenshot2.png" width="300"> <img src="Screenshot3.png" width="300">
 
 ### Links
 
