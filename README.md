@@ -24,7 +24,9 @@ The challenge was to build out this calculator app and get it looking as close t
 
 ### Screenshot
 
-![Final Results](./Screenshot1.png)(./Screenshot2.png)(./Screenshot3.png)
+![Final Results](./Screenshot1.png)
+(./Screenshot2.png)
+(./Screenshot3.png)
 
 ### Links
 
