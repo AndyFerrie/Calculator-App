@@ -1,6 +1,6 @@
 # Frontend Mentor Chalenge: Calculator App
 
-This is my solution to Calculator App challenge on Frontend Mentor. 
+This is my solution to the Calculator App challenge on Frontend Mentor. 
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ This is my solution to Calculator App challenge on Frontend Mentor.
 
 ### The challenge
 
-The challenge was to build out this calculator app and get it looking as close to the design as possible.
+The challenge was to build the below calculator app and get it looking as close to the design as possible.
 
 ![Challenge](Challenge.jpg)
 
@@ -26,11 +26,7 @@ The challenge was to build out this calculator app and get it looking as close t
 
 Final Results:
 
-![Final Results](Screenshot1.png)
-
-![Final Results](Screenshot2.png)
-
-![Final Results](Screenshot3.png)
+![Final Results](Screenshot1.png)(Screenshot2.png)(Screenshot3.png)
 
 ### Links
 
@@ -42,7 +38,7 @@ Final Results:
 
 I had great fun building the theme switch from scratch. I managed to make it by lining up 3 radio buttons that change the style class. I learned about browser quirks related to radio buttons and added some Javascript to make sure the default radio button is selected on refreshing the page as Firefox remembers your selection in case you accidentally refresh when filling out forms. 
 
-I also picked up how to make keys looked they are pressed when clicked using styling. Moreover, the keys were the perfect project to practice using grid.
+I also picked up how to make keys look like they are pressed when clicked using styling. Moreover, the keys were the perfect project to practice using grid.
 
 I thought the calculator function would be quite simple but massively underestimated how much goes into making one. To be honest, making it functional is beyond my current JS knowledge so it was very informative to get it all working by following a YouTube tutorial. 
 
